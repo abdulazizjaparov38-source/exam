@@ -6,7 +6,7 @@ import Four from "./components/four/Four";
 import Flashsale from "./components/flashsale/Flashsale";
 import Cartlar from "./components/cartlar/Cartlar";
 import Arrivals from "./components/arrivals/Arrivals";
-import Cards from './components/cards/Cards';
+
 import Sale from './components/sale/Sale';
 import Card from './components/card/Card';
 import Banner from './components/banner/Banner';
@@ -14,6 +14,7 @@ import Apples from './components/apples/Apples';
 import Second from './components/second/Second';
 import Choose from './components/choose/Choose';
 import Footer from './components/footer/Footer';
+import Carts from './components/carts/Carts';
 
 const malumotlar = [
   {
@@ -103,7 +104,7 @@ function App() {
       <Flashsale />
       <Cartlar data={malumotlar} />
       <Arrivals />
-      <Cards/>
+      <Carts/>
       <Sale two={two}/>
       <Card/>
       <Banner/>

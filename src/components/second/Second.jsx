@@ -1,6 +1,7 @@
 import React from 'react';
 import './Second.css';
 import { AiFillStar } from 'react-icons/ai';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Second = ({ data }) => {
   return (
@@ -8,8 +9,8 @@ const Second = ({ data }) => {
       <div className="f-tepa">
         <h2 className="f-sarlavha">Tezkor Savdo</h2>
         <div className="f-tugmalar">
-          <button className="t-chap">👈</button>
-          <button className="t-ong">👉</button>
+           <button className="t-chap"><IoIosArrowBack /></button>
+                    <button className="t-ong"><IoIosArrowForward /></button>
         </div>
       </div>
       <div className="s-setka">

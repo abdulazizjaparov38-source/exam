@@ -43,7 +43,6 @@
   border-color: #00cbcb;
 }
 
-/* Mahsulotlar Grid tizimi */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,7 +56,7 @@
 
 .c-rasm {
   width: 300px; 
-  height: 300px; /* Rasm balandligi */
+  height: 300px; 
   background: #f6f6f6;
   border-radius: 12px;
   position: relative;
@@ -125,7 +124,6 @@
   color: #ffb800;
 }
 
-/* Responsivlik */
 @media (max-width: 1100px) {
   .cards-grid { grid-template-columns: repeat(3, 1fr); }
 }

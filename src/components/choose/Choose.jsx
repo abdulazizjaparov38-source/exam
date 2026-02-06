@@ -1,27 +1,35 @@
 import React from 'react';
 import './Choose.css';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Choose = () => {
   return (
-    <div className="c-wrap">
-      <div className="c-box">
+    <div className="choose-wrapper">
+      <div className="choose-container">
         
-        
-        <button className="c-btn">👈</button>
+        {/* Chap strelka */}
+        <button className="slider-arrow">
+          <IoIosArrowBack />
+        </button>
 
-        <div className="c-list">
-          <div className="c-item"></div>
-          <div className="c-item"></div>
-          <div className="c-item"></div>
-          <div className="c-item"></div>
-          <div className="c-item"></div>
-          <div className="c-item"></div>
-          <div className="c-item"></div>
-          <div className="c-item"></div>
+        <div className="brand-list">
+          <div className="brand-item"></div>
+          <div className="brand-item active"></div> {/* Birinchisi rasmdagidek soya bilan */}
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
+          <div className="brand-item"></div>
         </div>
 
-        
-        <button className="c-btn">👉</button>
+        {/* O'ng strelka */}
+        <button className="slider-arrow">
+          <IoIosArrowForward />
+        </button>
         
       </div>
     </div>

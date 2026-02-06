@@ -1,0 +1,103 @@
+/* Card.css */
+
+.cards-asos {
+  padding: 20px 8%;
+}
+
+.f-tepa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.f-sarlavha {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+}
+
+.f-tugmalar {
+  display: flex;
+  gap: 10px;
+}
+
+.f-tugmalar button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 talik ustun */
+  gap: 20px;
+}
+
+.c-rasm {
+  width: 80%;
+  background: #f5f5f5;
+  height: 250px; 
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-rasm img {
+  width: 70%;
+  object-fit: contain;
+}
+
+.c-skidka {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00cbcb;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.c-matn {
+  padding: 15px 0;
+  text-align: left;
+}
+
+.c-p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
+
+.c-o {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.c-title {
+  font-size: 14px;
+  color: #444;
+  margin: 8px 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* Telefonlar uchun */
+@media (max-width: 1000px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,79 +1,66 @@
-.t-wrap {
-  padding: 40px 8%;
-}
-
-.t-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 25px;
-}
-
-.t-card {
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 30px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  transition: 0.3s;
-}
-
-.t-card:hover {
+.choose-wrapper {
+  padding: 60px 8%;
   background: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.t-user-img .img-placeholder {
-  width: 100px;
-  height: 100px;
-  background: #e0e0e0;
-  border-radius: 8px;
-  flex-shrink: 0;
+.choose-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.t-info {
+.brand-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden; 
   flex: 1;
 }
 
-.t-header {
+.brand-item {
+  min-width: 120px;
+  height: 120px;
+  background: #c9c7c7;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.brand-item:hover {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+.slider-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #222;
+  color: #fff;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+  flex-shrink: 0;
 }
 
-.t-name {
-  font-weight: 700;
-  color: #111;
-  font-size: 16px;
+.slider-arrow:hover {
+  background: #00cbcb;
+  
 }
-
-.t-job {
-  color: #888;
-  font-size: 14px;
-}
-
-.t-dot {
-  color: #ccc;
-}
-
-.t-stars {
-  color: #00cbcb;
-  display: flex;
-  font-size: 12px;
-}
-
-.t-text {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
-  font-style: italic;
-}
-
 
 @media (max-width: 900px) {
-  .t-grid { grid-template-columns: 1fr; }
+  .brand-item {
+    min-width: 100px;
+    height: 100px;
+  }
+  .choose-wrapper {
+    padding: 30px 4%;
+  }
 }

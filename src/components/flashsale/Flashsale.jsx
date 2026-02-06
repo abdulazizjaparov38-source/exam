@@ -4,14 +4,14 @@ import './flashsale.css';
 
 const Flashsale = () => {
   return (
-    <div className="f-sektsiya">
-      <div className="f-tepa">
-        <h2 className="f-sarlavha">Tezkor Savdo</h2>
-        <div className="f-tugmalar">
-          <button className="t-chap">👈</button>
-          <button className="t-ong">👉</button>
+      <div className="f-sektsiya">
+        <div className="f-tepa">
+          <h2 className="f-sarlavha">Tezkor Savdo</h2>
+          <div className="f-tugmalar">
+            <button className="t-chap">👈</button>
+            <button className="t-ong">👉</button>
+          </div>
         </div>
-      </div>
 
       <div className="f-blok">
         <div className="f-karta">

@@ -1,51 +1,54 @@
 import React from 'react';
 import './Apples.css';
 import { AiFillStar } from 'react-icons/ai';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { PRODUCT } from "../../components/index";
 
-import { PRODUCT } from "../../components/index"
 const Apples = () => {
   return (
-    <div className="a-asos">
-      <div className="f-tepa">
-        <h2 className="f-sarlavha">Tezkor Savdo</h2>
-        <div className="f-tugmalar">
-          <button className="t-chap">👈</button>
-          <button className="t-ong">👉</button>
+    <div className="apples-container">
+      {/* Header qismi */}
+      <div className="apples-header">
+        <h2 className="header-title">Tezkor Savdo</h2>
+        <div className="header-nav">
+          <button className="nav-btn"><IoIosArrowBack /></button>
+          <button className="nav-btn active"><IoIosArrowForward /></button>
         </div>
       </div>
-      <div className="a-blok">
-        
-        
-        <div className="a-banner">
-          
-          <div className="a-matn">
+
+      <div className="apples-content">
+        {/* Chap tomondagi Banner */}
+        <div className="apples-banner">
+          <div className="banner-txt">
             <h2>Iphone 14 Plus</h2>
             <p>Available in Stock!</p>
           </div>
+          {/* Logo yoki rasm uchun joy bo'sh qolishi mumkin rasmda bo'lganidek */}
         </div>
 
-       
-        <div className="a-grid">
+        {/* O'ng tomondagi 9 talik Grid */}
+        <div className="apples-grid">
           {PRODUCT.map((item, index) => (
-            <div key={index} className="c-item">
-              <div className="c-rasm">
-                <img src={item.img} alt="pro" />
+            <div key={index} className="product-mini-card">
+              <div className="card-img-box">
+                <img src={item.img} alt={item.title} />
               </div>
-              <div className="c-info">
-                <div className="c-narx">
-                  <b className="yangi">${item.price}</b>
-                  <span className="eski">${item.old}</span>
+              <div className="card-details">
+                <div className="price-row">
+                  <b className="price-new">${item.price}</b>
+                  <span className="price-old">${item.old}</span>
                 </div>
-                <p className="c-nomi">{item.title}</p>
-                <div className="c-reyt">
-                   <div className="yulduz"><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                   <span className="sharh">{item.reviews} Reviews</span>
+                <p className="product-name">{item.title}</p>
+                <div className="rating-row">
+                  <div className="stars-box">
+                    <AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar />
+                  </div>
+                  <span className="reviews-count">{item.reviews} Reviews</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );
