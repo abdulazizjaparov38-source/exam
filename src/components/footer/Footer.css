@@ -4,7 +4,7 @@
   margin-top: 50px;
 }
 
-/* Instagram cards */
+
 .f-insta {
   display: flex;
   padding: 0 8%;
@@ -34,7 +34,7 @@
   margin-bottom: 10px;
 }
 
-/* Asosiy footer qismi */
+
 .f-pastki {
   padding: 40px 8% 20px;
 }
@@ -92,7 +92,7 @@
   color: #ccc;
 }
 
-/* Ustunlar */
+
 .f-ustun {
   flex: 1;
   min-width: 150px;

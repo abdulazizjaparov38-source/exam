@@ -71,7 +71,6 @@
   font-style: italic;
 }
 
-/* Telefonlar uchun */
 @media (max-width: 850px) {
   .s-setka { grid-template-columns: 1fr; }
 }

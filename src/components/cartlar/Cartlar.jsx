@@ -8,8 +8,8 @@ const Cartlar = ({ data }) => {
       <div className="f-tepa">
         <h2 className="f-sarlavha">Categories</h2>
         <div className="f-tugmalar">
-          <button className="t-chap">👈</button>
-          <button className="t-ong">👉</button>
+          <button className="t-chap">chap</button>
+          <button className="t-ong">o'ng</button>
         </div>
       </div>
 

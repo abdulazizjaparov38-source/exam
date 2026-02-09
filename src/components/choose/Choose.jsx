@@ -7,14 +7,14 @@ const Choose = () => {
     <div className="choose-wrapper">
       <div className="choose-container">
         
-        {/* Chap strelka */}
+        
         <button className="slider-arrow">
           <IoIosArrowBack />
         </button>
 
         <div className="brand-list">
           <div className="brand-item"></div>
-          <div className="brand-item active"></div> {/* Birinchisi rasmdagidek soya bilan */}
+          <div className="brand-item active"></div> 
           <div className="brand-item"></div>
           <div className="brand-item"></div>
           <div className="brand-item"></div>
@@ -26,7 +26,6 @@ const Choose = () => {
           <div className="brand-item"></div>
         </div>
 
-        {/* O'ng strelka */}
         <button className="slider-arrow">
           <IoIosArrowForward />
         </button>

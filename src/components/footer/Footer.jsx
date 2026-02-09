@@ -53,12 +53,12 @@ const Footer = ({ services, about }) => {
           
           <div className="f-ustun">
             <h3>Contact Us</h3>
-            <p>📍 600 N Washington Ave Suite C203</p>
-            <p>📞 +008 0642 118</p>
-            <p>✉️ bestxtore@gmail.com</p>
+            <p> 600 N Washington Ave Suite C203</p>
+            <p> +008 0642 118</p>
+            <p> bestxtore@gmail.com</p>
             <div className="f-vaqt">
               <h4>Service Time</h4>
-              <p>🕒 24-hour (Monday - Sunday)</p>
+              <p> 24-hour (Monday - Sunday)</p>
             </div>
             <div className="f-to'lov">
               

@@ -26,7 +26,7 @@ const Cards = () => {
                 {item.old && <span className="c-o">${item.old}</span>}
               </div>
               <p className="c-title">{item.title}</p>
-              <b className="c-rate">⭐ {item.rate}</b>
+              <b className="c-rate"> {item.rate}</b>
             </div>
           </div>
         ))}

@@ -28,7 +28,7 @@ const Card = () => {
               </div>
               <p className="c-title">{item.title}</p>
               <div className="c-rate">
-                <span className="star">⭐</span>
+                <span className="star"></span>
                 <b>{item.rate} Reviews</b>
               </div>
             </div>

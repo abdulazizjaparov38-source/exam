@@ -1,4 +1,4 @@
-/* Card.css */
+
 
 .cards-asos {
   padding: 20px 8%;
@@ -95,7 +95,6 @@
   overflow: hidden;
 }
 
-/* Telefonlar uchun */
 @media (max-width: 1000px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -68,7 +68,7 @@ const Flashsale = () => {
           </div>
         </div>
 
-        {/* Ikkinchi Mahsulot */}
+        
         <div className="f-karta">
           <div className="r-qismi">
             <div className="belgilar">
