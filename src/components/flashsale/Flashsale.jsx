@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaStar, FaShoppingCart, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import './flashsale.css';
+import './Flashsale.css';
 
 const Flashsale = () => {
   return (
